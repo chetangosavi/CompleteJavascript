@@ -1,0 +1,19 @@
+Call Stack :
+    JavaScript keep track of what function is currently running(Where is the thread of Execution)
+
+    - Run a function and add it to the call stack 
+                |                         |
+                |   multiplyByTwo(value)  |
+                |    Global Execution     |  
+                ---------------------------   --> on completion it remove function from call stack
+
+                Global Execution is always at bottom  - and which ever function is on top of the stack - is currently running
+
+const num = 3
+    funtion multiplyByTwo(value){
+        const result = value*2;
+        return result;
+    }
+
+    const ans = multiplyByTwo(num);
+    const ans2 = multiplyByTwo(10);

@@ -16,7 +16,8 @@ Javascript Basics : JavaScript is a programming language that adds interactivity
     const ans2 = multiplyByTwo(10);
 
     Memory :
-                Global Execution Conetxt {
+            //Global Execution Conetxt
+                {
 
                 Line 1 - num : 3
                 Line 2 - multiplyByTwo(identifier) : [ Bundled Funtion ] 
@@ -24,10 +25,10 @@ Javascript Basics : JavaScript is a programming language that adds interactivity
                 we dont know the calculated value 
 
                 funtion call - Creates Execution Context is Created for the function Execution
-                //Local Execution Conetxt:
+            //Local Execution Conetxt:
                     { 
                         This also have two section 
-                            ThreadOfExecution           Memory  
+                            ThreadOfExecution           LocalMemory  
                                 Line 1                value : 3 ->(Argument)
                                                     (Parameter)
                                 Line 2                 result = 6
@@ -35,10 +36,15 @@ Javascript Basics : JavaScript is a programming language that adds interactivity
                                         \
                                         Checks for the result in the memory and ship it to the function call 
                     }
-
+                Now After function evaluation
+                 output = 6   ---> actual value
                 }
-                
+
+                In JavaScript we have single thread execution so it perform one task at a time
+
+
+    Global Execution Context - Wraps Over All Process            
     Execution Context : Created to run the code of the function - has 2 parts
         - Thread of Execution   
         - Memory
-    Global Execution Context - Wraps Over All Process
+    

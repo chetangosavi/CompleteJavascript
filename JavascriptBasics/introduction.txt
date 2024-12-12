@@ -1,4 +1,44 @@
 Javascript Basics : JavaScript is a programming language that adds interactivity to your website.
     JavaScript was invented by Brendan Eich.
 
-    When Javascript code runs it goes through the code line-by-line and execute each line
+    When Javascript code runs it goes through the code line-by-line and execute each line known as "Thread of Execution"
+    Save data like Strings and Arrays so we can use that data later in "Memory"
+
+    Working :
+
+    const num = 3
+    funtion multiplyByTwo(value){
+        const result = value*2;
+        return result;
+    }
+
+    const ans = multiplyByTwo(num);
+    const ans2 = multiplyByTwo(10);
+
+    Memory :
+                Global Execution Conetxt {
+
+                Line 1 - num : 3
+                Line 2 - multiplyByTwo(identifier) : [ Bundled Funtion ] 
+                Line 3 - output : Initially it saves only refernce bec at this point
+                we dont know the calculated value 
+
+                funtion call - Creates Execution Context is Created for the function Execution
+                //Local Execution Conetxt:
+                    { 
+                        This also have two section 
+                            ThreadOfExecution           Memory  
+                                Line 1                value : 3 ->(Argument)
+                                                    (Parameter)
+                                Line 2                 result = 6
+                                return result
+                                        \
+                                        Checks for the result in the memory and ship it to the function call 
+                    }
+
+                }
+                
+    Execution Context : Created to run the code of the function - has 2 parts
+        - Thread of Execution   
+        - Memory
+    Global Execution Context - Wraps Over All Process

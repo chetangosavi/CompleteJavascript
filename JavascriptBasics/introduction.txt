@@ -1,0 +1,4 @@
+Javascript Basics : JavaScript is a programming language that adds interactivity to your website.
+    JavaScript was invented by Brendan Eich.
+
+    When Javascript code runs it goes through the code line-by-line and execute each line

@@ -1,0 +1,53 @@
+
+    HighOrderFunction :
+
+     JavaScript Higher-Order Functions are functions that can accept other functions as arguments, return functions, or both.
+
+
+     function copyArrayAndMultiplyBy2(arr){
+                const newArr = [];
+                for(int i=0;i<arr.length;i++){
+                    newArr.push(arr[i]*2);                  //multiply
+                }
+
+                return newArr;
+            }
+            
+            const arr = [1,2,3]
+            const result = copyArrayAndMultiplyBy2(arr);
+
+
+    function copyArrayAndAdding2(arr){
+                const newArr = [];
+                for(int i=0;i<arr.length;i++){
+                    newArr.push(arr[i]+2);                  //addition
+                }
+
+                return newArr;
+            }
+
+            const arr = [1,2,3]
+            const result = copyArrayAndAdding2(arr);
+
+
+    Here we are breaking the DRY rule - Dont Repeat Yourself
+    so to avoid this now we will use High Order Function
+
+
+    function copyArrayAndManipulate(arr,instruction){
+                const newArr = [];
+                for(int i=0;i<arr.length;i++){
+                    newArr.push(instruction(arr[i]));                  //addition
+                }
+
+                return newArr;
+            }
+
+        function multiplyBy2(input){
+            return input*2;
+        }
+
+        const arr = [1,2,3]
+        const result = copyArrayAndManipulate(arr,multiplyBy2);
+
+        This is called HighOrderFunction;

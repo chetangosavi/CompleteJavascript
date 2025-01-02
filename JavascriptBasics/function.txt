@@ -37,4 +37,4 @@ Function in js:
             const arr = [1,2,3]
             const result = copyArrayAndMultiplyBy2(arr);
 
-    High Order Function :
+   

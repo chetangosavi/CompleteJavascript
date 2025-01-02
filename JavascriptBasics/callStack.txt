@@ -3,9 +3,10 @@ Call Stack :
 
     - Run a function and add it to the call stack 
                 |                         |
-                |   multiplyByTwo(value)  |
+                |   multiplyByTwo(value)  |  --> on completion it remove function from call stack
+                |-------------------------|
                 |    Global Execution     |  
-                ---------------------------   --> on completion it remove function from call stack
+                ---------------------------   
 
                 Global Execution is always at bottom  - and which ever function is on top of the stack - is currently running
 
@@ -17,3 +18,7 @@ const num = 3
 
     const ans = multiplyByTwo(num);
     const ans2 = multiplyByTwo(10);
+
+    - Finish running the function and remove it from stack
+    - Whatever is the top of the call stack that function is currently running
+    - return keyword tell us that function execution is completed 

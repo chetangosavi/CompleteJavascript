@@ -25,7 +25,8 @@ Javascript Basics : JavaScript is a programming language that adds interactivity
                 we dont know the calculated value 
 
                 funtion call - Creates Execution Context is Created for the function Execution
-            //Local Execution Conetxt:
+
+                //Local Execution Conetxt:
                     { 
                         This also have two section 
                             ThreadOfExecution           LocalMemory  
@@ -36,10 +37,13 @@ Javascript Basics : JavaScript is a programming language that adds interactivity
                                         \
                                         Checks for the result in the memory and ship it to the function call 
                     }
-                Now After function evaluation
-                 output = 6   ---> actual value
-                }
+                    Now After function evaluation
+                    output = 6   ---> actual value
+                //EndOfLocal Execution
 
+            //End of global execution Context
+
+            
                 In JavaScript we have single thread execution so it perform one task at a time
 
 

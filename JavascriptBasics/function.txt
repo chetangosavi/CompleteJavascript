@@ -1,0 +1,40 @@
+Function in js:
+    Function are block of code to perform specific operation 
+
+    Ex: 
+    function multiply(){
+        return 10 * 10;
+    }                      -------> function defination
+
+    multiply();  -----> function call
+
+
+    suppose now we want to calculate square for 9 in this we will have to write a another function for 9
+    so to avoid repetition functions are used(no hardcoding)
+    What principle are we breaking  --> DRY - Dont Repeat Yourself 
+
+    Lets Generalise this function:
+
+    function square(num){
+        return num*num;
+    }
+
+    square(8);  -->64
+    square(9);   --> 81 ( now we can find square of any number )
+
+    Ex :
+        Simple Program to copy array and multiply its elements by 2:
+
+            function copyArrayAndMultiplyBy2(arr){
+                const newArr = [];
+                for(int i=0;i<arr.length;i++){
+                    newArr.push(arr[i]*2);
+                }
+
+                return newArr;
+            }
+
+            const arr = [1,2,3]
+            const result = copyArrayAndMultiplyBy2(arr);
+
+    High Order Function :

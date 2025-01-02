@@ -1,0 +1,29 @@
+Callback and High Order Function :
+
+    Function in js are called first class objects
+    They can co-exist with and can be treated like any other js objects
+        1. Assigned to variables and properties of other js objects
+        2. passed as arguments into function.
+        3. Reeturned as values from function.
+
+    What is the difference between a callback function and a higher-order function?
+        - A callback function is a function passed as an argument to another function, while a higher-order function 
+          is the function that accepts, returns, or operates on other functions, including callbacks.
+
+    Callback Function :
+        callback: A function passed as an argument, executed inside higherOrderFunction.
+
+    Example: 
+        function higherOrderFunction(callback) {
+            // Perform some operations
+            // Call the callback function
+            callback();
+            }
+        function callbackFunction() {
+             console.log("Callback function is executed.");
+            }
+        // Passing the callback function to the higher-order function
+        higherOrderFunction(callbackFunction);
+
+
+        

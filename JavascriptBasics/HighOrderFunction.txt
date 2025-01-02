@@ -51,3 +51,8 @@
         const result = copyArrayAndManipulate(arr,multiplyBy2);
 
         This is called HighOrderFunction;
+
+
+        HighOrderFunction :
+            - Takes in function or passout function this type of function is simply called as HighOrderFunction there is nothing special 
+              about this function

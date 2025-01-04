@@ -1,0 +1,17 @@
+Nested Function scope :
+
+    Calling Function inside the same function call as it was defined:
+
+            Function outerFunction(){
+                let counter = 0;
+                function counterInc(){
+                    return counter++;
+                }
+
+                counterInc();
+            }
+
+            outerFunction()
+
+            - where you define your function determines what data it has access 
+            to when you call it

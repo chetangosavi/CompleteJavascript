@@ -1,4 +1,10 @@
-Clouser :
+Clouser : 
+
+     a closure is a function that has access to the variables and parameters of its outer function, 
+     even after the outer function has returned. Closures are created when a function is defined 
+     within another function, and the inner function retains access to the outer function's variables.
+
+     
     - Clouser is the most extoric of Javascript concepts
     - Enable powerful pro-level function like 'Once' and 'memoize'
     - Many JavaScript design patterns including the module pattern use Clouser

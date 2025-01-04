@@ -11,3 +11,4 @@ const generateFnc = outer();
 console.log(generateFnc());
 console.log(generateFnc());
 console.log(generateFnc());
+

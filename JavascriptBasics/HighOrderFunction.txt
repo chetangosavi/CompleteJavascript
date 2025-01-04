@@ -6,7 +6,7 @@
 
      function copyArrayAndMultiplyBy2(arr){
                 const newArr = [];
-                for(int i=0;i<arr.length;i++){
+                for(let i=0;i<arr.length;i++){
                     newArr.push(arr[i]*2);                  //multiply
                 }
 
@@ -19,7 +19,7 @@
 
     function copyArrayAndAdding2(arr){
                 const newArr = [];
-                for(int i=0;i<arr.length;i++){
+                for(let i=0;i<arr.length;i++){
                     newArr.push(arr[i]+2);                  //addition
                 }
 
@@ -36,7 +36,7 @@
 
     function copyArrayAndManipulate(arr,instruction){
                 const newArr = [];
-                for(int i=0;i<arr.length;i++){
+                for(let i=0;i<arr.length;i++){
                     newArr.push(instruction(arr[i]));                  //addition
                 }
 

@@ -1,0 +1,23 @@
+Clouser :
+    - Clouser is the most extoric of Javascript concepts
+    - Enable powerful pro-level function like 'Once' and 'memoize'
+    - Many JavaScript design patterns including the module pattern use Clouser
+    - Build iterators, handle partial application and maintain state in an 
+      asynchronous world.
+
+      Function can be return from another function in js:
+
+        Ex:
+                function createFunction(){
+                    function multiplyBy2(num){
+                        return num*2;
+                    }
+                    return multiplyBy2;
+                }
+
+                const generateFunction = createFunction();
+                const result = generateFunction(3);
+                console.log(result)                        ---------------> 6
+
+
+                Note - function defination is a value and it can to stored into variable

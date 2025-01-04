@@ -1,0 +1,25 @@
+    PairProgramming :
+            What is Pair Programming?
+            - Pair programming is a software development practice where two programmers work 
+            together on one computer. It involves one programmer, the driver, writing code while 
+            the other, the observer or navigator, reviews each line of code as it’s typed. This 
+            real-time collaboration helps catch errors early, improves code quality through constant
+            feedback, and ensures better design decisions. It also facilitates knowledge sharing and 
+            reduces the likelihood of bugs, leading to more efficient problem-solving and enhanced 
+            productivity within the development team.
+
+            - The most effective way to grow as a software engineer
+
+
+            Researcher -                             
+            Avoid blocks by reading everything they can find about bug/block
+
+            Stackoverflower -
+            Use code snippet to fix bug without knowing how they work
+
+            pair programmer -
+
+                Avoid blocks/bugs with partner
+                Stay focused on the problem
+                Refine technical communication
+                collaborate to solve problem

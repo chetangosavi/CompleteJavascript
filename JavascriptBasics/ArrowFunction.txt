@@ -1,0 +1,21 @@
+    Arrow Function:
+
+            Syntax :
+
+                    const adddition =(a,b)=>{return a+b}
+                    console.log(addition(10,20));   -----> Output = 30
+
+
+            Normal Function:
+
+                function multiplyBy2(input){
+                    return input*2;
+                }
+
+            Writting into arrow function:
+
+                const multiplyBy2 = (input)=>{ return input*2}
+
+                const multiplyBy2 = (input)=> input*2
+
+                const multiplyBy2 = input => input*2

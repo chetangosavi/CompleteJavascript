@@ -17,7 +17,7 @@ Javascript Basics : JavaScript is a programming language that adds interactivity
 
     Memory :
             //Global Execution Conetxt
-                {
+                
 
                 Line 1 - num : 3
                 Line 2 - multiplyByTwo(identifier) : [ Bundled Funtion ] 

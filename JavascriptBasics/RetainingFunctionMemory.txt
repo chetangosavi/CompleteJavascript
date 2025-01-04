@@ -13,3 +13,7 @@ Retaining Function Memory:
     console.log(generateFnc());
     console.log(generateFnc());
     console.log(generateFnc());
+    
+
+    name for bagpack:
+    C.O.V.E - Closed Over Variable Environment

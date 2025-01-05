@@ -13,7 +13,15 @@ Retaining Function Memory:
     console.log(generateFnc());
     console.log(generateFnc());
     console.log(generateFnc());
-    
 
-    name for bagpack:
+
+    Name for bagpack:
     C.O.V.E - Closed Over Variable Environment
+    P.L.S.R.D - Persitent Lexical Scope Reference Data
+    Bagpack
+    Clouser
+
+
+    Note - The bagpack(or closure) of live data is attached 
+    to counterInc(then to generateFnc) throw hidden property known as [[scope]]
+    which persists when the inner function is returned.

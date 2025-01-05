@@ -1,0 +1,20 @@
+function outer(){
+        let counter = 0;
+        function counterInc(){
+            return counter++;
+        }
+
+       return counterInc
+    }
+
+    const generateFnc = outer();
+    console.log(generateFnc());     - 1
+    console.log(generateFnc());     - 2
+    console.log(generateFnc());     - 3
+
+    const anotherFnc = outer();
+    console.log(anotherFnc());      - 1
+    console.log(anotherFnc());      - 2
+
+    if we run outer once again and store counterInc in anotherFnc this anotherFnc function is created in new execution context
+    therfore it will have its own new bagpack independent of previous results

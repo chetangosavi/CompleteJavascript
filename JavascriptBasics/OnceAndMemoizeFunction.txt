@@ -1,0 +1,14 @@
+
+    - Clouser gives our function persistent memories and entirely new toolkit 
+    for writting professional code
+
+    Iterators and generators : which uses lexical scoping and clouser to achieve
+    the most contemporary patterns for handling data in javascript
+
+    Module pattern : Perserve state for the life of an application without 
+    pollluting global namespace
+
+    Helper Function : functions like once and memoize
+
+    Asynchronous javascript : Callback and promises rely on clouser to persist
+    state in an asynchronous environment

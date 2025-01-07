@@ -7,6 +7,7 @@
 function once(func) {
   let result; // To store the result of the first call
   let hasBeenCalled = false; // To track if the function has been called
+  console.log(!hasBeenCalled)
 
   return function (...args) { // Use rest parameters to handle arguments
     if (!hasBeenCalled) {

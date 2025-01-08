@@ -6,3 +6,7 @@
 2. What are parameters in JavaScript?
 ->  In JavaScript, parameters are variables that you list as part of a function definition. 
     They act as placeholders for values that will be passed to the function when it is called.
+
+3. What is clouser in js ?
+->  A closure in JavaScript is a function that has access to the variables in its parent scope, 
+    even after the parent function has returned

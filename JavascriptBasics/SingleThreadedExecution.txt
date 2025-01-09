@@ -1,0 +1,41 @@
+Single Threaded Execution :
+        Javascript is a synchronous langauge which interprates code line by line and only move 
+        to next line once its finished executing previous line.
+
+        Ex :
+            const num = 3
+            function multBy2(inputNumber){
+                let result  = inputNumber * 2;
+                return result;
+            }
+
+            const val1 = multBy2(num);
+            const val2 = multBy2(10)
+
+        global Execution context :
+            {
+                num = 3
+                multBy2 = [f]
+
+                val1 = initialy uninitialised and will make call to multBy2 function
+
+                    after call new local execution context will be created
+
+                      //local execution context
+                      {
+                        inputNumber = 3
+                        result = 3*2 -> 6
+                        return 6
+                      }
+                val 1 = 6;
+
+                same for val2
+            }
+
+            this is how single threaded execution works(line by line)
+
+Notes - 
+    In ES6 most prominent feaature was promises
+    Asynchrinicity - the feature that makes dynamic web application possible
+    the event loop - javascripts triage
+    microtask queue callback queue and web broweser features (APIs)

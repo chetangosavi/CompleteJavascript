@@ -1,0 +1,26 @@
+Asyncronous broweser features:
+
+        Web Browser :
+            Js run into web broweser
+                Features:                           labels :
+                 (JS +  - DevTools
+               Engine)  - Console                  -> console
+                        - Sockets                  
+                        - Network Requests         -> fetch/xhr
+                        - Rendering (HTML DOM)     -> document
+                        - Timer                    -> setTimeout()
+
+
+
+
+            EX :
+
+                function printHello(){
+                        console.log("hello")
+                    }
+
+                    setTimeout(printHello,1000)
+                    console.log("me first")
+
+
+                    -> setTimeout is a feature of Web browser [Label for Timer]

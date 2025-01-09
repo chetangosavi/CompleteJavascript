@@ -1,0 +1,4 @@
+Callback Queue and Event Loop :
+
+    Callback Queue: After an asynchronous task is complete, its callback is added to the Callback Queue. 
+    The Event Loop: checks whether the Call Stack is empty and, if so, pushes callbacks from the queue to the call stack

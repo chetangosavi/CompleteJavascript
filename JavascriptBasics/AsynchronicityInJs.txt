@@ -1,0 +1,14 @@
+Asynchrinicity in js:
+
+        Asynchrinicity is a backbone of modern developement in js
+
+        javascript is :
+            - single Threaded
+            - synchronously executed
+    
+        so what if we have task:
+            - Accessing server to get new data that takes a long time
+            - code we want to run using that data
+
+Challenge : we want to wait  for that data to be stored in data so that they are there
+            to run that displayData on - but no code can run in mean time

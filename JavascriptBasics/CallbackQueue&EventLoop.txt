@@ -2,3 +2,15 @@ Callback Queue and Event Loop :
 
     Callback Queue: After an asynchronous task is complete, its callback is added to the Callback Queue. 
     The Event Loop: checks whether the Call Stack is empty and, if so, pushes callbacks from the queue to the call stack
+
+    function printHello(){
+        console.log("Hello");
+    }
+
+    function blockFor2Sec(){
+        someLoop......
+    }
+
+    setTimeout(printHello,0);
+    blockFor2Sec();
+    console.log("Me First")

@@ -1,0 +1,73 @@
+//Clouser
+
+1. What is a closure in JavaScript?
+-> A closure is a feature in JavaScript where an inner function has access to:
+    - Variables defined in its own scope.
+    - Variables of its outer (enclosing) function.
+    - Variables in the global scope.
+    
+2. Why and when are closures used? ?
+->  Closures are used for:
+    - Data hiding (creating private variables).
+    - Callback functions in asynchronous operations.
+    - Function currying.
+    - Maintaining state in functions.
+
+3. How do closures help in data hiding?
+-> Closures allow you to create private variables by enclosing them within a function, 
+   making them inaccessible from the global scope.
+
+   function counter() {
+    let count = 0; // Private variable
+    return {
+        increment: () => ++count,
+        decrement: () => --count,
+        getCount: () => count,
+       };
+    }
+
+4. What are the disadvantages of closures?
+->  Memory consumption: Closures retain references to variables in their scope, which may increase memory usage if not handled properly.
+    Debugging difficulty: Debugging closures can be tricky due to the retained scope.
+    Overhead: Excessive use of closures in performance-critical applications may lead to slower execution.
+
+5. Can you explain closures in event listeners?
+-> Closures are often used in event listeners to maintain access to variables from their outer function.
+
+Example:
+    function attachClickEvent(buttonId) {
+        let count = 0; // Closure variable
+        const button = document.getElementById(buttonId);
+        button.addEventListener("click", () => {
+            count++;
+            console.log(`Button clicked ${count} times`);
+        });
+    }
+
+// Call the function for a button
+attachClickEvent("myButton");
+Here, the inner function (event listener) retains access to the count variable, demonstrating a closure.
+
+6. How are closures used in currying?
+-> Currying is a technique where a function returns another function, allowing arguments to be passed one at a time. 
+   Closures enable this behavior.
+
+7. What are common mistakes when using closures?
+-> Unexpected variable updates: Closures retain references, not copies, of outer variables.
+
+8. Can closures cause memory leaks?
+-> Yes, if references to a closure are not cleared properly, it may lead to memory leaks.
+    Example :
+        function createClosure() {
+            let bigObject = { data: "This is a large object" };
+            return function () {
+                console.log(bigObject);
+            };
+        }
+
+        const closureFunction = createClosure();
+// If closureFunction is not cleared, `bigObject` will remain in memory.
+
+9. What is the relationship between closures and the scope chain?
+-> Closures work by leveraging the scope chain. A closure "remembers" the variables of its parent 
+   scope even after the parent function has executed.

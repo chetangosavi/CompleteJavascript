@@ -14,3 +14,5 @@ Callback Queue and Event Loop :
     setTimeout(printHello,0);
     blockFor2Sec();
     console.log("Me First")
+
+    Note - Check Callback Diagram From Diagram Folder for working

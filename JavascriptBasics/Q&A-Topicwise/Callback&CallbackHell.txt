@@ -1,0 +1,31 @@
+//Callback and Callback Hell
+
+1. Callback Hell
+->  Callback hell refers to the situation in JavaScript where multiple nested callbacks create complex, 
+    deeply indented code, often called the “pyramid of doom.” This structure makes the code difficult to read, 
+    debug, and maintain, resulting in poor code quality and scalability issues.
+
+2. Why do callbacks sometimes lead to callback hell?
+-> Callbacks can lead to callback hell when multiple asynchronous tasks are chained together, requiring nested callbacks. 
+   This nesting results in complex, deeply indented code that is difficult to read and manage.
+
+
+3. Can callbacks be used without causing callback hell?
+-> Yes, callbacks can be used effectively without causing callback hell, especially in simple scenarios with few 
+   asynchronous tasks. The key is to avoid excessive nesting by breaking down tasks or using alternatives like Promises.
+
+
+4. How can callback hell be avoided when using callbacks?
+-> Callback hell can be avoided by using techniques such as modularizing code, flattening the nesting by breaking down tasks, 
+   or switching to alternatives like Promises or async/await, which provide more linear code structures.
+
+
+5. What alternatives to callbacks help prevent callback hell?
+-> Promises and async/await are popular alternatives to callbacks that help prevent callback hell. They offer more linear, 
+   readable, and maintainable code by avoiding deep nesting and allowing better error handling.
+
+
+6. Is async/await better than callbacks for preventing callback hell?
+-> Yes, async/await is generally better than callbacks for preventing callback hell. It allows asynchronous code 
+   to be written in a synchronous-like manner, making it more readable, maintainable, and easier to debug, thereby 
+   avoiding the pitfalls of callback hell.

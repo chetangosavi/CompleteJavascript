@@ -6,6 +6,14 @@
 2. What are parameters in JavaScript?
 ->  In JavaScript, parameters are variables that you list as part of a function definition. 
     They act as placeholders for values that will be passed to the function when it is called.
+__________________________________________________________________________________________________________________________________________
+
+//Event Handling :
+
+1. what an event listener is? 
+-> An event listener is basically a function that waits for an event to occur. That event can be anything 
+   like a mouse click event, submitting a form, pressing keys of a keyboard, etc.
+
 
 __________________________________________________________________________________________________________________________________________
 

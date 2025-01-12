@@ -34,3 +34,17 @@ Promises : A Promise is an Object that links Producing code and Consuming code.
                             {
                                 PromiseObject
                             }
+
+                XHR : XML HTTP REQUEST
+
+                MicroTaskQueue : 
+                    - is executed before callback Queue
+                    - any function attaced to promise object those function in onFullfillment [] are sent into MicroTaskQueue
+
+
+
+    promise Object : {
+        value : ......
+        onFullfillment: []    -->.then()
+        onRejection: []       -->.catch()
+    }

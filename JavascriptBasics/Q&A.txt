@@ -117,3 +117,10 @@ ________________________________________________________________________________
    avoiding the pitfalls of callback hell.
 
 __________________________________________________________________________________________________________________________________________
+
+
+Promises :
+
+1. What is promise all JavaScript?
+-> Promise. all is used when you have multiple asynchronous operations and you want to wait for all of them to complete.
+   It takes an array of promises and returns a single Promise that resolves when all of the promises have resolved

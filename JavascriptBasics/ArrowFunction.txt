@@ -19,3 +19,18 @@
                 const multiplyBy2 = (input)=> input*2
 
                 const multiplyBy2 = input => input*2
+
+
+1. What are Anonymous Functions?
+-> An anonymous function is simply a function that does not have a name.
+
+ex :
+    function() {
+    // Function Body
+     }
+
+     or
+
+     ( () => {
+    // Function Body...
+        } )();

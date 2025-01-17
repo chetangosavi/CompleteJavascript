@@ -1,0 +1,28 @@
+
+Map In JavaScript :
+    - accepts a callback function and applies that function to each element
+      of an array, then returns a new array
+
+      this is similar to for each method accepts map returns a new array
+      it does not change original array
+      
+Syntax :
+    array.map(function(currentValue, index, arr), thisValue)
+
+
+Parameters:
+
+1. function()	    Required.       A function to be run for each array element.
+2. currentValue	    Required.       The value of the current element.
+3. index	        Optional.       The index of the current element.
+4. arr	            Optional.       The array of the current element.
+5. thisValue	    Optional.       (Default value undefined.) A value passed to the function to be used as its this value.
+
+Description :
+
+map() creates a new array from calling a function for every array element.
+map() does not execute the function for empty elements.
+map() does not change the original array.
+
+Return Value :
+An array	-> The results of a function for each array element.

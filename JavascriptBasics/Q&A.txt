@@ -14,6 +14,7 @@ ________________________________________________________________________________
 -> An event listener is basically a function that waits for an event to occur. That event can be anything 
    like a mouse click event, submitting a form, pressing keys of a keyboard, etc.
 
+2.
 
 __________________________________________________________________________________________________________________________________________
 

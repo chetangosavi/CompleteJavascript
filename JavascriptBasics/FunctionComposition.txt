@@ -1,0 +1,32 @@
+Function composition :
+    - Chaining with dots relies in js prototype features-functions returns array 
+    has/which have access to HOF's(map,filter,reduce)
+
+    - Passing output into next function automatically
+            - Its easier to add features
+            - Easily readable
+            - Easy to debug 
+    
+    const multBY2 = (num)=> num*2;
+    const add5 = (num)=> num + 5;
+    const divBy5 = (num)=> num/5;
+
+    const multResult = multBY2(10);
+    const addRes = add5(multResult);
+    const divRes = divBy5(addRes);
+
+    console.log(divRes);    ------------> Normal way of writting function or we can also write using nesting but that is disaster
+                for debugging so to avoid
+
+    //lets look at functional composition :
+
+        reduce() is the most versatile function with the help of reduce() we can perform same thing
+
+
+    const multBY2 = (num)=> num*2;
+    const add5 = (num)=> num + 5;
+    const divBy5 = (num)=> num/5;
+
+    How do you compose function 
+    -> its all about reduction of each function to some value 
+

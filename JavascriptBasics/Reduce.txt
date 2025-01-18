@@ -18,10 +18,13 @@ A reducer function typically has the following signature:
 
 
     Syntax :
+        The syntax of the reduce function in JavaScript is as follows:
+            array.reduce(callbackFunction, initialValue)
+                            |-> callbackFunction(accumulator, currentValue, currentIndex, array)
 
+        EX :
             const numbers = [1, 2, 3, 4];
             const sumReducer = (accumulator, currentValue) => accumulator + currentValue;
-
             const sum = numbers.reduce(sumReducer, 0);
             console.log(sum);
 

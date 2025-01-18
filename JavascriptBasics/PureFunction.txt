@@ -1,0 +1,15 @@
+Pure function in js :
+    A Pure Function is a function (a block of code) that always returns the same result if the same arguments are passed.
+
+    EX:
+        function add(a, b) {
+        return a + b;
+        }
+        console.log(add(2, 3)); 
+        console.log(add(2, 3));
+
+
+        - Pure functions return consistent results for identical inputs.
+        - They do not modify external states or depend on mutable data.
+        - Often used with immutable data structures to ensure reliability.
+        - Their independence from external states makes them highly reusable.

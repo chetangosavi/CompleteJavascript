@@ -1,0 +1,40 @@
+reduce():
+
+1. Purpose: Reduces an array to a single value by applying a callback function repeatedly, accumulating a result.
+2. Input: A callback function that takes an accumulator and the current element, and optionally an 
+          initial value for the accumulator.
+3. Output: A single value (e.g., sum, product, object, etc.)
+
+
+Reducer : In JavaScript, a reducer refers to the callback function you pass to the reduce method of 
+an array. This function specifies how to process and combine array elements into a single cumulative result.
+
+Anatomy of a Reducer Function
+A reducer function typically has the following signature:
+    1. accumulator: The running total or result that is carried over between iterations.
+    2. currentValue: The current element being processed in the array.
+    3. currentIndex (optional): The index of the current element.
+    4. array (optional): The original array that is being reduced.
+
+
+    Syntax :
+
+            const numbers = [1, 2, 3, 4];
+            const sumReducer = (accumulator, currentValue) => accumulator + currentValue;
+
+            const sum = numbers.reduce(sumReducer, 0);
+            console.log(sum);
+
+            The reducer function here is (accumulator, currentValue) => accumulator + currentValue.
+            -> The initial value for the accumulator is 0.
+
+            How the Reducer Works Step-by-Step :
+                Given the array [1, 2, 3, 4] and initial value 0:
+
+                First call: accumulator = 0, currentValue = 1 → accumulator = 0 + 1 = 1
+                Second call: accumulator = 1, currentValue = 2 → accumulator = 1 + 2 = 3
+                Third call: accumulator = 3, currentValue = 3 → accumulator = 3 + 3 = 6
+                Fourth call: accumulator = 6, currentValue = 4 → accumulator = 6 + 4 = 10
+                Final result: 10.
+
+                -> refer diagram "mapandreduce" from diagram folder

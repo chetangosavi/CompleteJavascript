@@ -1,0 +1,78 @@
+Array Methods :
+
+        push();
+            -> Push the given element into array at last index
+
+        length 
+            -> The length property returns the length (size) of an array
+
+        toString()
+            -> toString() converts an array to a string of (comma separated) array values.
+
+        at()
+            -> The at() method returns an indexed element from an array.
+
+        join();
+            -> The join() method also joins all array elements into a string.
+               It behaves just like toString(), but in addition you can specify the separator
+
+        pop();
+            -> The pop() method removes the last element from an array
+
+        shift();
+            -> The shift() method removes the first array element and "shifts" all other elements to a lower index
+
+        unshift();
+            -> The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements
+               The unshift() method returns the new array length
+
+        delete();
+            -> Warning !
+                Using delete() leaves undefined holes in the array.
+                Use pop() or shift() instead
+
+    Merging Arrays (Concatenating) :
+        concat();
+            -> The concat() method creates a new array by merging (concatenating) existing arrays
+                Note:
+                    The concat() method does not change the existing arrays. It always returns a new array.
+                    The concat() method can take any number of array arguments.
+
+        copyWithin();
+            -> The copyWithin() method copies array elements to another position in an array
+                Note
+                    The copyWithin() method overwrites the existing values.
+                    The copyWithin() method does not add items to the array.
+                    The copyWithin() method does not change the length of the array.
+
+    Flattening an Array:
+            Flattening an array is the process of reducing the dimensionality of an array.
+            Flattening is useful when you want to convert a multi-dimensional array into a one-dimensional array.
+
+        flat();
+            -> The flat() method creates a new array with sub-array elements concatenated to a specified depth
+
+    Splicing and Slicing Arrays:
+            The splice() method adds new items to an array.
+            The slice() method slices out a piece of an array.
+
+        splice();
+            -> The splice() method can be used to add new items to an array
+
+        toSpliced()
+            -> The difference between the new toSpliced() method and the old splice() method is that the new method 
+               creates a new array, keeping the original array unchanged, while the old method altered the original array.
+
+        slice();
+            -> The slice() method slices out a piece of an array into a new array
+
+        - The methods that array gets are stored in an object
+        that every array has access to when you refer to that array
+        followed by dot operator and the method name
+        Ex :
+            array.map();
+
+            const arr = [1,2,3]
+            arr.push(10) ---------> output : [1,2,3,10]
+
+        This link to this object is full shared method us one the __proto__property

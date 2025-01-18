@@ -1,0 +1,8 @@
+1. What is rest parameter in javascript ?
+->  JavaScript Rest Parameters is a feature introduced in ES6 that allows us to pass an indefinite
+    number of arguments to a function. This feature is used to pass an unlimited number of arguments 
+    to a function, and the rest parameter allows us to access the arguments as an array.
+
+2. What are parameters in JavaScript?
+->  In JavaScript, parameters are variables that you list as part of a function definition. 
+    They act as placeholders for values that will be passed to the function when it is called.

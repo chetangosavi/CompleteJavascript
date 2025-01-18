@@ -1,0 +1,24 @@
+DataTypes in JS :
+    There are total 8 data types in js 7 primitive and 1 non-primitive that is object
+
+    Types :
+
+            Number
+            String 
+            Boolean
+            BigInt
+            Undefined
+            NUll
+            Symbol   --> this 7 are primitive
+
+            object   --> non-primitive
+
+
+Note : JavaScript evaluates expressions from left to right. Different sequences can produce different results;
+
+    Ex :
+            let x = 16 + 4 + "Volvo";   --> 20Volvo
+
+
+JavaScript Types are Dynamic :
+-> JavaScript has dynamic types. This means that the same variable can be used to hold different data types

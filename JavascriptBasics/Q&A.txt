@@ -1,3 +1,14 @@
+
+//Variable in Js :
+
+1. What is the scope of var and let ?
+-> In JavaScript, the scope of a variable declared with var is the function it's declared in, 
+   while the scope of a variable declared with let is the block it's declared in. 
+
+__________________________________________________________________________________________________________________________________________
+
+//Function in Js :
+
 1. What is rest parameter in javascript ?
 ->  JavaScript Rest Parameters is a feature introduced in ES6 that allows us to pass an indefinite
     number of arguments to a function. This feature is used to pass an unlimited number of arguments 
@@ -18,7 +29,7 @@ ________________________________________________________________________________
 
 __________________________________________________________________________________________________________________________________________
 
-//Clouser
+//Clouser :
 
 1. What is a closure in JavaScript?
 -> A closure is a feature in JavaScript where an inner function has access to:

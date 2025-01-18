@@ -1,0 +1,21 @@
+Relation Between map and reduce:
+
+    Fundamental Concept:
+
+        1. map transforms each element independently and doesn't depend on other elements.
+        2. reduce processes elements cumulatively, carrying forward an "accumulated" result.
+        
+    Implementing map with reduce: You can implement map using reduce by accumulating a new array:
+    Ex :
+        const numbers = [1, 2, 3, 4];
+        const doubled = numbers.reduce((acc, num) => {
+            acc.push(num * 2);
+            return acc;
+        }, []);
+        console.log(doubled); // Output: [2, 4, 6, 8]
+
+
+Use Cases:
+
+    1. Use map when you want to transform data without combining it into a single value.
+    2. Use reduce when you want to derive a cumulative result, like a total, object, or a transformed structure.

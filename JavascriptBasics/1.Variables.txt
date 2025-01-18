@@ -1,0 +1,8 @@
+Variables :
+ -> A variable in JavaScript is a named container that stores values. 
+    Variables can store numbers, strings, objects, and other JavaScript data types.
+
+    types :
+            1> var      -> functional scope
+            2> let      -> block scope in which it is declared
+            3> const    -> cannot be changed

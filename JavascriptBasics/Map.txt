@@ -26,3 +26,11 @@ map() does not change the original array.
 
 Return Value :
 An array	-> The results of a function for each array element.
+
+what map actually doing ?
+-> accumulator , push
+
+map() :
+1. Purpose: Transforms each element in an array and returns a new array containing the transformed elements.
+2. Input: A callback function that is applied to each element in the array.
+3. Output: A new array of the same length as the original, containing the transformed values.

@@ -1,0 +1,55 @@
+DOM - Manipulation :
+
+    - The important parts of a web browser as represented in JavaScript — Navigator, Window, and Document.
+    - The document (represented by the DOM in browsers) is the actual page loaded into the window, and is 
+      represented in JavaScript by the Document object.
+
+
+      Selectors and Properties :
+
+          document.getElementById(id);
+          document.getElementByClassName(className);
+          document.getElementByName()
+          getElementByTagName() 
+          document.querySelector()  ---> tagName  #id  .className
+          document.querySelectorAll()  --> returns nodeList
+
+          getAttribute()
+          setAttribute('class/id','value') --> always overides
+
+          variableName.styles.color="red"
+
+          textContent - Display visible text as well as hidden text
+          innerHTML   - Return value of complete element with html Properties if written inside
+          innerText   - Display only the visible text
+
+          firstElementChild - selects the first child of parent
+          lastElementChild - selects last child of parent
+          parentElement - we can select parent from child element from child elements
+
+    1. HTML-Collection : 
+        - This is not pure array and no looping functionality available
+        - to use map or other array methods we need to convert html Collection into pure array
+
+        how to do that ?
+          -> Array.from(variableName)     - will convert html-collection into pure array
+
+    2. nodeList : 
+        - This not pure arrays so we dont get functionality of arrays with this both but forEach() is available fot nodeList
+
+
+
+How to create element in js :
+
+  Creating :
+              const h1 = document.createElement("h1")
+              const span = document.createElement("span")
+
+  Removing :
+
+              const element = document.getElementById("demo");
+              element.remove();
+
+
+              appendChild()
+              removeChild()

@@ -1,0 +1,28 @@
+{
+    "employees": [
+        {
+            "id": "1",
+            "name": "Chetan Gosavi",
+            "desigmation": "Software Engineer",
+            "description": "I am a passionate and versatile software developer skilled in modern technologies, with hands-on experience in creating responsive and user-friendly applications.",
+            "img":"https://t4.ftcdn.net/jpg/02/14/74/61/360_F_214746128_31JkeaP6rU0NzzzdFC4khGkmqc8noe6h.jpg"
+        },
+        {
+            "id": "2",
+            "name": "Rupesh Gosavi",
+            "description": "Software Engineer"
+
+        },
+        {
+            "id": "3",
+            "name": "Nimaya Suryawanshi ",
+            "description": "Software Engineer"
+        },
+        {
+            "id": "4",
+            "name": "Nitin Pathak",
+            "description": "Software Engineer"
+        }
+        
+    ]
+}

@@ -2,9 +2,11 @@
 const renderInto = document.querySelector(".employee__list-render");
 const renderEmployeeInfo = document.querySelector(".emplyee__single-info-render");
 
+
 (async function fetchData(){
     const data = await fetch("data.json");
     const res = await data.json()
+    
     //console.log(res)
     
     function render(){
@@ -13,16 +15,27 @@ const renderEmployeeInfo = document.querySelector(".emplyee__single-info-render"
             const div = document.createElement('div')
             div.setAttribute('class','employee_item')
             div.setAttribute('data-id', index)
-            div.innerHTML = `${e.name} <span class="cancle-box">X</span>`
+            div.innerHTML = `${e.name}<span class="cancle-box" id="${index}">X</span>`
             renderInto.appendChild(div)
+            
         })
     }
     render()
-    console.log(renderInto)
+    // console.log(renderInto)
     let employeeNumber = 0;
     renderInto.addEventListener('click',(e)=> {
         const clickedItem = e.target.closest('.employee_item');
-        console.log(clickedItem)
+        // console.log(e.target.classList)
+        const deleteClicked = e.target.closest('.cancle-box')
+        // console.log(deleteClicked)
+        if(deleteClicked){
+            const deleteId = e.target.getAttribute('id')
+            console.log(deleteId)
+            res.employees.splice(deleteId, 1); 
+            render();
+            renderEmployeeInfo.innerHTML = ''; 
+            return; 
+        }
         if(clickedItem){
             employeeNumber = clickedItem.getAttribute('data-id')
             displayEmployeeInformation(employeeNumber)
@@ -42,5 +55,6 @@ const renderEmployeeInfo = document.querySelector(".emplyee__single-info-render"
            
     }
     displayEmployeeInformation(employeeNumber)
+   
 })();
 

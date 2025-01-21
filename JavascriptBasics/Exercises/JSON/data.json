@@ -9,20 +9,96 @@
         },
         {
             "id": "2",
-            "name": "Rupesh Gosavi",
-            "description": "Software Engineer"
-
+            "name": "Nikita Tripathi",
+            "desigmation": "Software Developer",
+            "description": "Creative designer with a passion for crafting intuitive user interfaces and seamless user experiences.",
+            "img":"https://media.istockphoto.com/id/1051172208/photo/happy-woman-posing-looking-at-camera-in-winter-in-the-street.jpg?s=612x612&w=0&k=20&c=m1BxTjS6vlUZT8tOPunuNKMeGc0EEFHOnjWYyhP92N0="
         },
         {
             "id": "3",
-            "name": "Nimaya Suryawanshi ",
-            "description": "Software Engineer"
+            "name": "Shubham Patil",
+            "desigmation": "Software Tester",
+            "description": "Focused on creating high-performance mobile applications for Android and iOS platforms with a user-first approach.",
+            "img":"https://static.vecteezy.com/system/resources/thumbnails/005/346/410/small_2x/close-up-portrait-of-smiling-handsome-young-caucasian-man-face-looking-at-camera-on-isolated-light-gray-studio-background-photo.jpg"
         },
         {
             "id": "4",
-            "name": "Nitin Pathak",
-            "description": "Software Engineer"
+            "name": "Hariharan Mali",
+            "desigmation": "Software Engineer-II",
+            "description": "I am a passionate and versatile software developer skilled in modern technologies, with hands-on experience in creating responsive and user-friendly applications.",
+            "img":"https://www.stryx.com/cdn/shop/articles/man-looking-attractive.jpg?v=1666662774"
+        },
+        {
+            "id": "5",
+            "name": "Aarav Kapoor",
+            "desigmation": "Full Stack Developer",
+            "description": "Experienced in building scalable web applications and solving challenging problems with a focus on efficiency and user experience.",
+            "img": ""
+        },
+        {
+            "id": "6",
+            "name": "Ishita Mehra",
+            "desigmation": "UI/UX Designer",
+            "description": "Creative designer with a passion for crafting intuitive user interfaces and seamless user experiences for web and mobile applications.",
+            "img": ""
+        },
+        {
+            "id": "7",
+            "name": "Vivaan Joshi",
+            "desigmation": "Backend Developer",
+            "description": "Specialized in developing robust server-side applications and APIs, ensuring scalability and security in every project.",
+            "img": "https://www.dmarge.com/wp-content/uploads/2021/01/dwayne-the-rock-.jpg"
+        },
+        {
+            "id": "8",
+            "name": "Meera Sharma",
+            "desigmation": "Data Scientist",
+            "description": "Dedicated to leveraging data to uncover insights, create predictive models, and drive business decisions with impactful results.",
+            "img": ""
+        },
+        {
+            "id": "9",
+            "name": "Rohan Gupta",
+            "desigmation": "Mobile App Developer",
+            "description": "Focused on creating high-performance mobile applications for Android and iOS platforms with a user-first approach.",
+            "img": ""
+        },
+        {
+            "id": "10",
+            "name": "Aditi Jain",
+            "desigmation": "DevOps Engineer",
+            "description": "Proficient in implementing CI/CD pipelines and automating workflows to streamline software development processes.",
+            "img": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e"
+        },
+        {
+            "id": "11",
+            "name": "Kabir Ahuja",
+            "desigmation": "Machine Learning Engineer",
+            "description": "Expert in building and deploying machine learning models, with hands-on experience in TensorFlow and PyTorch.",
+            "img": ""
+        },
+        {
+            "id": "12",
+            "name": "Ananya Desai",
+            "desigmation": "Cloud Architect",
+            "description": "Experienced in designing and deploying cloud-based infrastructure for high-availability and fault-tolerant applications.",
+            "img": ""
+        },
+        {
+            "id": "13",
+            "name": "Yash Verma",
+            "desigmation": "Cybersecurity Analyst",
+            "description": "Committed to securing systems and networks, with expertise in threat detection and mitigation strategies.",
+            "img": ""
+        },
+        {
+            "id": "14",
+            "name": "Priya Nair",
+            "desigmation": "AI Researcher",
+            "description": "Focused on advancing artificial intelligence research and applying AI to solve complex real-world problems.",
+            "img": ""
         }
+       
         
     ]
 }

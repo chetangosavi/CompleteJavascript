@@ -6,116 +6,136 @@
   font-family: "Poppins", serif;
 }
 
-:root{
-    --bgcolor:rgb(187, 187, 187);
-    --bgcolor-hover:rgb(211, 211, 211);
-}
-.head{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    
+:root {
+  --bgcolor: rgb(187, 187, 187);
+  --bgcolor-hover: rgb(211, 211, 211);
 }
 
-.add_employee--btn{
-    background-color: var(--bgcolor);
-    border: none;
-    border-radius:15px;
-    font-weight: 500;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: 0.5s ease;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
-.add_employee--btn:hover{
-    background-color: var(--bgcolor-hover);
-    cursor: pointer;
+.add_employee--btn {
+  background-color: var(--bgcolor);
+  border: none;
+  border-radius: 15px;
+  font-weight: 500;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.employee{
-
-    display: flex;
-    max-width: 1600px;
-    margin: 0 auto;
-    margin-top: 50px;
+.add_employee--btn:hover {
+  background-color: var(--bgcolor-hover);
+  cursor: pointer;
 }
 
-.employee__list-name ,
-.employee__single-info{
-    border: 1px solid black;
-    height: 600px;
+.employee {
+  display: flex;
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-top: 50px;
 }
 
-.employee__list-name{
-    width: 30%;
-    
+.employee__list-name,
+.employee__single-info {
+  border: 1px solid black;
+  height: 600px;
+}
+
+.employee__list-name {
+  width: 30%;
 }
 .employee__list-name h2,
-.employee__single-info h2{
-    padding: 10px;
-    text-align: center;
-    border-bottom: 1px solid black;
+.employee__single-info h2 {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid black;
 }
-.employee__single-info{
-    width: 70%;
-    
-}
-
-.employee__list-render{
-    margin-top: 20px;
-    height: 500px;
-    overflow-y: scroll;
-
+.employee__single-info {
+  width: 70%;
 }
 
-.employee_item{
+.employee__list-render {
+  margin-top: 20px;
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.employee_item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+  margin-top: 4px;
+  transition: 0.4s ease;
+}
+.employee_item:hover {
+  background-color: var(--bgcolor-hover);
+  cursor: pointer;
+}
+
+.cancle-box:hover {
+  background-color: orange;
+}
+
+.employeeInfo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.emplyee__single-info-render {
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 50%;
+  /* background-color: red; */
+  border: none;
+}
+
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: red;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  
+}
+
+form{
+    background-color: blue;
     display: flex;
-    justify-content: space-between;
-    padding: 5px 20px;
-    margin-top: 4px;
-    transition:0.40s ease;
-}
-.employee_item:hover{
-    background-color: var(--bgcolor-hover);
-    cursor: pointer;
-}
-
-.cancle-box:hover{
-    background-color: orange;
-    
-}
-
-.employeeInfo-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    gap:10px;
 }
 
-.emplyee__single-info-render{
-    height: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.profile-img{
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    position: relative;
-    border-radius: 50%;
-    /* background-color: red; */
-    border: none;
-}
-
-.profile-img img{
+form input{
+    padding: 8px 10px;
     width: 100%;
-    height: 100%;
-    object-fit:cover;
-    display: block;
-
-    
 }

@@ -24,4 +24,8 @@ const val = arr.find((num)=>num===4)          //returns number if present else r
 const index = arr.findIndex((num)=>num===4)  //returns index of element if present(first occurance)
 // console.log(val+":"+index)
 const isPresent = arr.includes(4)
-console.log(isPresent)          //returns boolean value if element is present in array
+// console.log(isPresent)          //returns boolean value if element is present in array
+
+
+const arr2 = arr.slice(1,5)  
+console.log(arr2)

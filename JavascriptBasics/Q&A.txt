@@ -19,13 +19,22 @@ ________________________________________________________________________________
     They act as placeholders for values that will be passed to the function when it is called.
 __________________________________________________________________________________________________________________________________________
 
+//Array
+
+1. What is difference between forEach() and map() ?
+-> the main difference between map and forEach is map returns new array and for each dosent return anything
+   - map does not modify original array where as forEach it can modify the original array if necessary.
+   - map(): Can be chained with other array methods (filter(), reduce(), etc.).
+     forEach(): Cannot be chained because it returns undefined.
+   - map(): Generally preferred for transformations because it avoids side effects.
+     forEach(): Typically used when side effects (e.g., updating UI, modifying elements) are needed.
+__________________________________________________________________________________________________________________________________________
+
 //Event Handling :
 
 1. what an event listener is? 
 -> An event listener is basically a function that waits for an event to occur. That event can be anything 
    like a mouse click event, submitting a form, pressing keys of a keyboard, etc.
-
-2.
 
 __________________________________________________________________________________________________________________________________________
 

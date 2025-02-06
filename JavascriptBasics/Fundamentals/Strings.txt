@@ -1,0 +1,18 @@
+Strings in JS :
+
+    - In JavaScript, strings are primitive data types, and there are several built-in methods you can use to 
+      manipulate them. 
+      
+    list of commonly used string methods in JavaScript, along with explanations:
+
+    Ex - const str = "JavaScript is amazing";
+
+    1. length :
+                str.length     --> returns length of the string str
+
+    2. toUpperCase() --> converts into upper case string
+       toLowerCase() --> converts into lower case string
+
+    3. split(seperator)
+
+        const portions = str.split("is")

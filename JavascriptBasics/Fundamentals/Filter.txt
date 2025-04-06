@@ -1,0 +1,12 @@
+filter() — What is it?
+    -> The filter() method creates a new array with only the elements that pass a certain condition.
+
+    array.filter((element, index, array) => {
+        // return true to keep the element
+        // return false to exclude it
+        });
+
+    Parameter	Description
+    element	    The current element in the array
+    index	    (optional) The index of the element
+    array	    (optional) The original array

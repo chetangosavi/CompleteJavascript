@@ -1,0 +1,12 @@
+What is reduce()?
+    -> reduce() is a method used on arrays in JavaScript. It reduces the array to a single value 
+       by running a callback function on each element.
+
+    array.reduce((accumulator, currentValue) => {
+        return updatedAccumulator;
+    }, initialValue);
+
+
+    accumulator: holds the result from the previous iteration (or initial value in the first run)
+    currentValue: the current element of the array
+    initialValue (optional): the starting value of the accumulator

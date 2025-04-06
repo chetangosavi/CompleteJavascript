@@ -1,7 +1,7 @@
-Asyncronous broweser features:
+Asyncronous browser features:
 
         Web Browser :
-            Js run into web broweser
+            Js run into web browser
                 Features:                           labels :
                  (JS +  - DevTools
                Engine)  - Console                  -> console
@@ -9,9 +9,6 @@ Asyncronous broweser features:
                         - Network Requests         -> fetch/xhr
                         - Rendering (HTML DOM)     -> document
                         - Timer                    -> setTimeout()
-
-
-
 
             EX :
 

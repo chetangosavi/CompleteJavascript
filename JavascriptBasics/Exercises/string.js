@@ -275,8 +275,82 @@ function test(record){
 
 //-----------------------------------------------------------------------------------------------------------
 
-console.log(+true)
-console.log(!"str")
-console.log(!!"str")
+// console.log(+true)
+// console.log(!"str")
+// console.log(!!"str")
 
 //----------------------------------------------------------------------------------------------------------
+
+
+//Convert "the sky is blue" to "Blue Is Sky The"
+// Expected: PascalCase reversed
+
+const strr = "the sky is blue" 
+const PascalCase = strr.split(" ").reverse()
+                  .map(word=>{
+                    return word.charAt(0).toUpperCase() + word.slice(1)
+                  })
+                  .join(" ")
+
+                  // console.log(PascalCase)
+
+//----------------------------------------------------------------------------------------------------------
+
+// Find all duplicate characters in a string
+// Input: "aabbccdde"
+// Expected: [ 'a', 'b', 'c', 'd' ]
+// (Hint: Use an object or Set to track counts)
+
+const stu = "aabbccdde"
+const duplicates = stu.split("")
+                  .reduce((acc,character)=>{
+                    acc[character] = (acc[character] || 0) + 1
+                    return acc
+                  },{})     
+              
+const filtered = Object.entries(duplicates)
+                .filter(([char,count])=> count > 1)
+
+const onlyChars = filtered.map(([char])=> char)
+
+                  // console.log(onlyChars)
+
+//----------------------------------------------------------
+
+var a = {}
+var b = {key:'b'} 
+var c = {key:'c'}
+
+a[b] = 600
+b[c] = 700
+b[b] = 400
+
+// console.log(a[c])   //600
+// console.log(a[b])   //600
+// console.log(b[b])   //400
+// console.log(b[c])   //400
+
+//Note when we use object as a key it automatically gets stringified into "[object Object]"
+//so here a[b] -> a["[object Object]"] --- 600  so 600 gets assigned to a and same for b
+
+//-----------------------------------------------------------------
+
+//Join two strings alternatively 
+
+let strr1 = 123;
+let strr2 =  "abcdef";
+
+strr1 = strr1.toString()
+strr2 = strr2.toString()
+
+const maxLength = Math.max(strr1.length, strr2.length)
+// console.log(maxLength)
+
+let result = "";
+for( let i = 0; i < maxLength; i++){
+  if(i < strr1.length) result+=strr1[i]
+  if(i < strr2.length) result+=strr2[i]
+}
+// console.log(result); 
+
+//--------------------------------------------------------------------------------------------------

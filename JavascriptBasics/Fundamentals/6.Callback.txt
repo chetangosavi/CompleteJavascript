@@ -1,0 +1,24 @@
+What is a Callback?
+    -> A callback function is a function passed as an argument to another function — 
+       and it's usually called later, after something happens
+
+        function greet(name, callback) {
+            console.log("Hi " + name);
+            callback();
+            }
+
+            function sayBye() {
+            console.log("Goodbye!");
+            }
+
+            greet("Chetan", sayBye);
+
+    Output: 
+        Hi Chetan
+        Goodbye!
+
+
+Why Use Callbacks?
+    Handling async code (like file reads, APIs)
+    Running code after something else finishes
+    Used in higher-order functions (like map, filter, forEach, etc)

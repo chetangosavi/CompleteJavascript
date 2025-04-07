@@ -1,0 +1,24 @@
+What is a Promise?
+    -> A Promise is an object that represents the eventual completion (or failure) 
+       of an asynchronous operation and its resulting value.
+
+
+        const myPromise = new Promise((resolve, reject) => {
+            // async operation
+            if (/* success */) {
+                resolve("Success!");
+            } else {
+                reject("Error occurred!");
+            }
+            });
+
+            myPromise
+            .then((data) => console.log(data))
+            .catch((err) => console.error(err));
+
+
+        States of a Promise:
+            Pending – initial state
+            Fulfilled – operation completed successfully (resolve)
+            Rejected – operation failed (reject)
+

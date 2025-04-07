@@ -1,0 +1,8 @@
+ Shallow Copy:
+    It copies only the top-level properties.
+    If a property is a reference (like an object or array), it copies the reference, not the actual data.
+
+
+Deep Copy:
+    It recursively copies all levels, including nested objects/arrays.
+    Both top-level and nested data are duplicated.

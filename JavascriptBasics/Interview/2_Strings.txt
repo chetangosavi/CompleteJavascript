@@ -1,0 +1,30 @@
+String In Js:
+
+
+Methods:
+    
+    str.length             // Returns the length of the string
+    str.toUpperCase()      // Converts the string to uppercase
+    str.toLowerCase()      // Converts the string to lowercase
+    str.includes('text')   // Checks if 'text' exists in the string
+    str.startsWith('text') // Checks if string starts with 'text'
+    str.endsWith('text')   // Checks if string ends with 'text'
+    str.indexOf('text')    // Returns first index of 'text' or -1 if not found
+    str.lastIndexOf('text')// Returns last index of 'text'
+    str.slice(start, end)  // Extracts a part of the string (end not included)
+    str.substring(start, end) // Similar to slice but can't use negative indexes
+    str.substr(start, length) // Extracts `length` characters from `start`
+    str.trim()             // Removes whitespace from both ends
+    str.trimStart()        // Removes whitespace from the start
+    str.trimEnd()          // Removes whitespace from the end
+    str.replace('a', 'b')  // Replaces first occurrence of 'a' with 'b'
+    str.replaceAll('a', 'b') // Replaces all occurrences of 'a' with 'b'
+    str.split(' ')         // Splits string into array by separator
+    str.charAt(index)      // Returns character at given index
+    str.charCodeAt(index)  // Returns UTF-16 code of character at index
+    str.repeat(n)          // Repeats the string n times
+    str.concat('more')     // Joins strings together
+    str.padStart(len, char)// Pads string at the start to desired length
+    str.padEnd(len, char)  // Pads string at the end to desired length
+    str.match(regex)       // Returns array of matches based on regex
+    str.search(regex)      // Returns index of first match based on regex

@@ -1,0 +1,37 @@
+Arrya In JS: Cheetsheet
+
+    import:
+
+            map((value,index,array)=>{});   --> returns new array
+            filter((value,index,array)=>{}); -->returns new Array
+            reduce((accumulator,current)=>{},initialValue);  --> returns based on initialValue can return array as well as object
+
+    All Array Methods:
+
+            arr.length              // Returns number of elements in the array
+            arr.push(item)          // Adds item to end of array
+            arr.pop()               // Removes and returns last item
+            arr.shift()             // Removes and returns first item
+            arr.unshift(item)       // Adds item to beginning of array
+            arr.concat(arr2)        // Combines arrays and returns new array
+            arr.join(',')           // Converts array to string with separator
+            arr.slice(start, end)   // Returns portion of array (non-mutating)
+            arr.splice(start, count, ...items) // Changes array by removing/replacing/adding
+            arr.indexOf(item)       // Returns index of first match or -1
+            arr.lastIndexOf(item)   // Returns index of last match or -1
+            arr.includes(item)      // Checks if array contains item
+            arr.reverse()           // Reverses array in place
+            arr.sort()              // Sorts array alphabetically (or using compare function)
+            arr.fill(value, start, end) // Fills array section with value
+            arr.flat(depth)         // Flattens nested arrays up to given depth
+            arr.toString()          // Converts array to comma-separated string
+            arr.forEach(fn)         // Runs function for each element (no return)
+            arr.map(fn)             // Transforms each element, returns new array
+            arr.filter(fn)          // Filters elements based on condition
+            arr.reduce(fn, init)    // Reduces array to single value
+            arr.some(fn)            // Checks if any element satisfies condition
+            arr.every(fn)           // Checks if all elements satisfy condition
+            Array.isArray(arr)      // Checks if value is an array
+            arr.find(fn)            // Returns first element that matches condition
+            arr.findIndex(fn)       // Returns index of first matching element
+            arr.at(index)           // Gets element at index (supports negative index)

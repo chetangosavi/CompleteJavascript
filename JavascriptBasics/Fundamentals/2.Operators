@@ -1,0 +1,42 @@
+Operator :
+
+        * - multiplication
+        ** - Exponentiation (power)
+
+        1. ?? – Nullish Coalescing Operator
+        Ex :
+            let name = null ?? "Guest";
+            console.log(name); // "Guest"
+
+            -> Unlike ||, it doesn't treat "" or 0 as falsy.
+
+        2. ?. – Optional Chaining
+        Ex :
+            const user = { profile: { name: "Chetan" } };
+            console.log(user?.profile?.name); // "Chetan"
+            console.log(user?.address?.city); // undefined (no error!)
+
+            -> Safely accesses deeply nested object properties without throwing an error.
+
+        3. ** – Exponentiation Operator
+            console.log(3 ** 2); //3*3 = 9
+
+        4. Object?.[key] – Optional Chaining with Dynamic Key Access
+        Ex :
+            const data = { score: 10 };
+            console.log(data?.["score"]); // 10
+            console.log(data?.["marks"]); // undefined
+
+        5. !! – Double NOT (Boolean Coercion)
+        Ex :
+            console.log(!!"hello"); // true
+            console.log(!!0);       // false
+
+        6. ... – Spread / Rest Operator
+        Ex :
+            const arr = [1, 2, 3];
+            const newArr = [...arr, 4]; // [1, 2, 3, 4]
+
+
+
+

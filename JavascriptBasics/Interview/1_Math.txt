@@ -1,0 +1,27 @@
+Math in JS:
+
+    Math.PI               // Returns the value of π (3.14159...)
+    Math.round(x)         // Rounds x to the nearest integer
+    Math.floor(x)         // Rounds x down to the nearest integer
+    Math.ceil(x)          // Rounds x up to the nearest integer
+    Math.trunc(x)         // Removes the decimal part (returns integer part)
+    Math.pow(x, y)        // Returns x to the power of y (x^y)
+    Math.sqrt(x)          // Returns square root of x
+    Math.cbrt(x)          // Returns cube root of x
+    Math.abs(x)           // Returns absolute value of x (positive number)
+    Math.max(a, b, ...)   // Returns the largest number among arguments
+    Math.min(a, b, ...)   // Returns the smallest number among arguments
+    Math.random()         // Returns a random number between 0 and 1
+    Math.floor(Math.random() * n) // Random integer from 0 to n-1
+    Math.sign(x)          // Returns 1 if positive, -1 if negative, 0 if zero
+    Math.log(x)           // Returns natural log (base e) of x
+    Math.log10(x)         // Returns base 10 logarithm of x
+    Math.log2(x)          // Returns base 2 logarithm of x
+    Math.exp(x)           // Returns e^x (Euler's number power x)
+    Math.sin(x)           // Returns sine of x (in radians)
+    Math.cos(x)           // Returns cosine of x (in radians)
+    Math.tan(x)           // Returns tangent of x (in radians)
+    Math.asin(x)          // Returns arcsine in radians
+    Math.acos(x)          // Returns arccosine in radians
+    Math.atan(x)          // Returns arctangent in radians
+    Math.atan2(y, x)      // Returns angle (in radians) from x-axis to point (x, y)

@@ -1,0 +1,63 @@
+🔥 To Cover Next
+1. Array Deep Dive
+    find, findIndex
+    sort (with custom sorting)
+    concat, flat, flatMap
+    Destructuring arrays
+
+2. Objects
+    Object methods (keys, values, entries)
+    Looping over objects
+    Object destructuring
+    Optional chaining ?.
+    Nullish coalescing ??
+    Shallow vs Deep copy (spread, structuredClone, etc.)
+
+3. Functions
+    Function expressions vs declarations
+    Arrow functions (=>)
+    this in different contexts
+    Callback functions
+    Higher-order functions
+    Closures
+    IIFE (Immediately Invoked Function Expressions)
+
+4. Asynchronous JavaScript
+    setTimeout, setInterval
+    Promises
+    async/await
+    fetch API
+    Error handling with try/catch
+
+5. DOM Manipulation
+    Selecting elements (getElementById, querySelector, etc.)
+    Changing styles and content
+    Event Listeners (click, submit, etc.)
+    Creating and removing elements dynamically
+
+6. ES6+ Features
+    let, const, var
+    Template literals `${}`
+    Spread and Rest operators
+    Modules (import/export)
+
+7. Classes and Prototypes
+    Prototypes & inheritance
+    Creating classes
+    Constructor functions
+    super, extends
+
+8. Storage
+    localStorage, sessionStorage
+    JSON methods (stringify, parse)
+
+9. Error Handling
+    try, catch, finally
+    Custom errors
+
+10. Miscellaneous
+    Type conversion (Number(), String(), etc.)
+    Short-circuiting (&&, ||)
+    Debounce and Throttle
+    Event bubbling & delegation
+

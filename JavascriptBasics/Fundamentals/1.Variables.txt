@@ -6,3 +6,38 @@ Variables :
             1> var      -> functional scope
             2> let      -> block scope in which it is declared
             3> const    -> cannot be changed
+
+        What happens if you declare a variable without var, let, or const?
+
+                function test() {
+                        x = 10; // no var, let, or const
+                   }
+                test();
+                console.log(x); // ??   ---> 10
+
+        -> 🤯 Why?
+                If you assign a value to a variable without declaring it, JavaScript implicitly 
+                creates a global variable — but only in non-strict mode.
+
+                clg(window.x) ---> 10
+
+        ->  In strict mode, it's an error!
+
+        Why it's dangerous
+                - Pollutes the global scope.       
+                - Can cause name collisions.
+                - Hard to debug in large codebases.
+                - Breaks in strict mode.
+
+
+        To Avoid :
+
+                Use "use strict" mode
+
+                Ex :
+                        "use strict";
+
+                        function test() {
+                        x = 10;            //ReferenceError: x is not defined
+                        }
+                        test();

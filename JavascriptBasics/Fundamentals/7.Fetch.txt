@@ -1,0 +1,51 @@
+Fetch is a Promise-based API in JavaScript.
+    When you call fetch(url), it immediately returns a Promise that:
+    resolves with a Response object when the HTTP request completes successfully (even if the status is 404 or 500),
+    rejects only if there’s a network error (like no internet or DNS fail).
+
+    Ex :
+
+        fetch("URL_HERE")
+            .then((response) => response.json()) // also returns a Promise
+            .then((data) => console.log(data))
+            .catch((error) => console.error("Fetch failed:", error));
+
+    With async/await: 
+
+        async function getPost() {
+            try {
+                const res = await fetch("URL_HERE");
+                const data = await res.json(); // Must await this too
+                console.log(data);
+            } catch (err) {
+                console.error("Something went wrong:", err);
+            }
+            }
+
+            getPost();
+
+    Important Notes:
+        -> fetch() won’t reject on 404 or 500. You have to check manually:
+
+    Ex :
+        if (!res.ok) {
+            throw new Error("HTTP error: " + res.status);
+            }
+
+
+
+
+    FETCH SYNTAX :
+
+        fetch(url, {
+            method: "GET" | "POST" | "PUT" | "DELETE",
+            headers: {
+                "Content-Type": "application/json",
+                // any other headers (ex: auth tokens)
+            },
+            body: JSON.stringify(data), // only for POST/PUT
+            });
+        
+        
+
+

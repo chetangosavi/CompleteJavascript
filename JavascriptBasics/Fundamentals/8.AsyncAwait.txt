@@ -1,0 +1,13 @@
+What is it?
+    -> async/await is syntactic sugar over Promises that allows you 
+       to write asynchronous code in a synchronous-looking way.
+
+    Ex :
+       async function getData() {
+            try {
+                const result = await someAsyncFunction();
+                console.log(result);
+            } catch (error) {
+                console.error(error);
+            }
+            }

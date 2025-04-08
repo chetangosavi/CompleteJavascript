@@ -1,0 +1,56 @@
+✅ 1. Core JavaScript Concepts
+    Data Types (primitive vs reference)
+    Hoisting
+    Closures
+    Scope: global, function, block
+    this keyword
+    Event loop (call stack, task queue, microtasks)
+    Execution context & Lexical environment
+    Memory management (garbage collection basics)
+
+✅ 2. Arrays & Strings
+    You've done great here already! Just revise:
+    .map(), .filter(), .reduce(), .some(), .every(), .find()
+    String methods: .slice(), .substring(), .includes(), .indexOf(), .split(), .replace()
+    Practice pattern-based questions like:
+    Capitalize, reverse, count frequency, etc.
+
+✅ 3. Objects
+    Object destructuring
+    Spread and rest operators
+    Optional chaining (?.)
+    Dynamic keys
+    Deep vs shallow copy (JSON.parse(JSON.stringify(...)) vs structuredClone)
+    Object methods: Object.keys(), Object.values(), Object.entries()
+
+✅ 4. Functions
+    Function expressions vs declarations
+    Arrow functions
+    Callback functions
+    Higher-order functions
+    Pure vs impure functions
+    Debouncing & Throttling (especially for UI roles)
+
+✅ 5. Asynchronous JavaScript
+    Callbacks
+    Promises
+    async/await
+    Error handling with try/catch
+    Fetch API and real-world usage
+
+✅ 6. DOM Manipulation
+    Selecting elements: getElementById, querySelector, etc.
+    Changing text, styles, classes
+    Event listeners
+    Event delegation
+    Forms and input handling
+
+✅ 7. ES6+ Concepts
+    let/const vs var
+    Template literals
+    Destructuring (objects & arrays)
+    Default parameters
+    Spread/rest
+    Modules (import / export)
+    Sets & Maps
+

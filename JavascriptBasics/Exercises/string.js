@@ -315,23 +315,7 @@ const onlyChars = filtered.map(([char])=> char)
 
                   // console.log(onlyChars)
 
-//----------------------------------------------------------
 
-var a = {}
-var b = {key:'b'} 
-var c = {key:'c'}
-
-a[b] = 600
-b[c] = 700
-b[b] = 400
-
-// console.log(a[c])   //600
-// console.log(a[b])   //600
-// console.log(b[b])   //400
-// console.log(b[c])   //400
-
-//Note when we use object as a key it automatically gets stringified into "[object Object]"
-//so here a[b] -> a["[object Object]"] --- 600  so 600 gets assigned to a and same for b
 
 //-----------------------------------------------------------------
 

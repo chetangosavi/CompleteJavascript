@@ -1,0 +1,7 @@
+Some Basic Maths :
+
+    + Sum of first N natural Numbers :
+
+            formula - (n*(n+1))/2
+
+    

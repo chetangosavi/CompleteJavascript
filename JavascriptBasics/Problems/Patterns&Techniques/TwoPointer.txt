@@ -1,0 +1,65 @@
+What is the Two Pointers Technique?
+    The Two Pointers approach is a technique used to solve problems involving arrays or 
+    strings by using two pointers (variables) that traverse the structure in a coordinated way.
+
+When to Use Two Pointers:
+    You often use this approach when:
+        - The array is sorted (usually ascending).
+        - You're looking for pairs or triplets that meet a condition (like sum).
+        - You're working with strings (e.g., checking palindromes, reverse words).
+        - You want to optimize space/time over brute-force.
+
+Types of Two Pointer Patterns:
+
+    1. Opposite Ends (i = 0, j = n - 1)
+    Use case: Sorted array + target sum
+
+
+        const twoSum = (arr, target) => {
+            let i = 0;
+            let j = arr.length - 1;
+
+            while (i < j) {
+                const sum = arr[i] + arr[j];
+                if (sum === target) return [arr[i], arr[j]];
+                else if (sum < target) i++;
+                else j--;
+            }
+
+            return [];
+        };
+
+    2. Same Direction (Sliding Window)
+    Use case: Subarray with conditions
+
+        // Find max sum of subarray of size k
+        const maxSubarraySum = (arr, k) => {
+            let max = 0, sum = 0;
+            for (let i = 0; i < arr.length; i++) {
+                sum += arr[i];
+                if (i >= k - 1) {
+                    max = Math.max(max, sum);
+                    sum -= arr[i - k + 1];
+                }
+            }
+            return max;
+        };
+
+    3. Fast and Slow Pointer
+    Use case: Detect cycles in linked list or arrays
+
+        const hasCycle = (head) => {
+            let slow = head;
+            let fast = head;
+
+            while (fast && fast.next) {
+                slow = slow.next;
+                fast = fast.next.next;
+
+                if (slow === fast) return true;
+            }
+
+            return false;
+        };
+
+

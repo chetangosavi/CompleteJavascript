@@ -7,3 +7,15 @@ const arr = [4,5,6,9,8,3]
     console.log(sortedArray)
     console.log("Second Largest Element",sortedArray[1])
     console.log("kth-Largest Element",sortedArray[k-1])
+
+//Using Min Heap:
+
+
+   const heap = []
+   for(let num of arr){
+    heap.push(num)
+    heap.sort()
+    if(heap.length>k) heap.shift()
+   }
+
+   console.log("Kth largest Number Using MinHeap: ",heap[0])

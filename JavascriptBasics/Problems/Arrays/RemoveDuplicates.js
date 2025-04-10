@@ -14,34 +14,34 @@
 
 //brute force:
 
-    const arr = [0,0,1,1,1,2,2,3,3,4]
+    let arr = [0,0,1,1,1,2,2,3,3,4,5,6]
     // const uniqueOnly = [...new Set(arr)]
-    // console.log(uniqueOnly)
+    // console.log(uniqueOnly.length)
 
-    let  i = 1;
-    let k = 0;
+
+//Solution 2
     const n = arr.length;
+    let count = 0
     
     function removeDuplicates(){
-        while(i<n){
-            if(arr[i] === arr[k]){
-                arr.splice(i, 1); 
-                k++
-                i++
-            }
-            else{
-                if(arr[k] === -1){
-                    let temp = arr[i]
-                    arr[1] = arr[k]
-                    arr[k]=temp
-                    i++
-                }
-            }
+
+        for(let i = 0; i < n; i++){
+          if(arr[i]!=arr[i+1]){
             
+            arr[count] = arr[i]   
+            count++
+            
+          }
         }
+       return count
     }
 
-
-    console.log(removeDuplicates())
+    const uniqueCount = removeDuplicates()
+    console.log(uniqueCount)
+    console.log(arr.splice(0,uniqueCount))
+    
    
 
+
+    
+ 

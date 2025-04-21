@@ -13,14 +13,14 @@ function rotateRight(nums){
     return nums;
 }
 
-const arr2 = [1,2,3,4,5]
+
 //Left rotate
+const arr2 = [1,2,3,4,5]
 function rotateLeft(nums){
     for(let i = 0; i < k; i++){
         let elm = nums.shift();
         nums.push(elm)
     }
-
     return nums;
 }
 
